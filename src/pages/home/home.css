@@ -1,0 +1,56 @@
+.homeContainer {
+  display: flex;
+  width: 100%;
+}
+
+/* ---------- Mobile (≤ 768px) ---------- */
+@media (max-width: 768px) {
+  /* Hide the rightbar by default on mobile */
+  .rightbar {
+    display: none;
+  }
+
+  /* When the profile icon is tapped, show it as a slide-in drawer */
+  .rightbar.mobileOpen {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 75%;
+    max-width: 320px;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #fff;
+    box-shadow: -2px 0 12px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+    padding: 20px 15px;
+    border-radius: 0;
+    animation: slideIn 0.25s ease-out;
+  }
+
+  /* Dark backdrop behind the drawer */
+  .mobileBackdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 999;
+  }
+}
+
+/* On desktop, never show the backdrop */
+@media (min-width: 769px) {
+  .mobileBackdrop {
+    display: none;
+  }
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
