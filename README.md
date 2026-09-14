@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Flourishtalk 🌐
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Facebook-inspired social media UI built with **React**. Responsive, mobile-first, and ready to be hooked up to a real backend.
 
-## Available Scripts
+![React](https://img.shields.io/badge/React-17.0.2-61DAFB?logo=react&logoColor=white)
+![React Router](https://img.shields.io/badge/React%20Router-6-CA4245?logo=reactrouter&logoColor=white)
+![Material UI](https://img.shields.io/badge/Material%20UI-4-007FFF?logo=mui&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-In the project directory, you can run:
+---
 
-### `yarn start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- 📱 **Fully responsive** — desktop, tablet, and mobile layouts
+- 🎨 **Facebook-style UI** — topbar, feed, sidebar, and right sidebar
+- 👤 **Profile page** with user info and friends list
+- 🔐 **Login & Register** pages (UI only — backend not wired up yet)
+- 🌐 **Client-side routing** via React Router v6
+- 🖼️ **Post feed** with likes, comments, and share composer
+- 👥 **Online friends** list with slide-in drawer on mobile
+- ⚡ **Fast dev experience** with Create React App (`react-scripts`)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `yarn test`
+## 📸 Preview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> Add screenshots here once you take them.
 
-### `yarn build`
+| Home (Desktop) | Home (Mobile) |
+|---|---|
+| ![desktop](docs/desktop.png) | ![mobile](docs/mobile.png) |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Layer | Tech |
+|---|---|
+| Framework | [React 17](https://reactjs.org/) |
+| Routing | [React Router v6](https://reactrouter.com/) |
+| Icons | [Material UI Icons](https://mui.com/material-ui/material-icons/) |
+| Build tool | [Create React App](https://create-react-app.dev/) (`react-scripts@5`) |
+| Package manager | npm |
+| Node version | 20.x (managed with [Volta](https://volta.sh/)) |
 
-### `yarn eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🚀 Getting Started
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **Node.js 20.x** — this project is pinned with Volta. If you don't have Volta, [install it](https://docs.volta.sh/guide/getting-started), then simply run `volta install node@20`.
+- **npm 10.x** (comes bundled with Node 20)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Installation
 
-## Learn More
+```bash
+# 1. Clone the repo
+git clone https://github.com/YOUR_USERNAME/flourishtalk.git
+cd flourishtalk
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# 2. Install dependencies
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# 3. Start the dev server
+npm start
